@@ -2,12 +2,7 @@
   "manifest_version": 3,
   "name": "HuggingBuddy",
   "version": "1.0",
-  "permissions": [
-    "activeTab",
-    "storage",
-    "tabs",
-    "scripting"
-  ],
+  "permissions": [],
   "background": {
     "service_worker": "background.js"
   },

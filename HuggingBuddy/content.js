@@ -43,7 +43,7 @@ function injectSummaryButton() {
             const paperLink = paperLinkElement.getAttribute('href');
             if (paperLink) {
                 console.log('Downloading paper:', paperLink);
-                downloadPaper(paperLink + '.pdf')
+                downloadPaper(paperLink) //+ '.pdf'// cros issue due to appending .pdf
                     .then(pdfBlob => {
                         console.log('Paper downloaded successfully');
                         return extractPDFText(pdfBlob);
